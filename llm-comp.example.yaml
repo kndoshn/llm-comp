@@ -1,0 +1,34 @@
+# llm-comp.yaml
+# このファイルを編集して挙動をカスタマイズします。
+
+app:
+  title: "llm-comp"
+  system: |
+    You are a helpful assistant.
+  timeout_ms: 60000
+
+providers:
+  openai:
+    enabled: true
+    model: ["gpt-5-nano", "gpt-4.1-nano"]
+    temperature: 0.2
+    max_output_tokens: 800
+
+  claude:
+    enabled: true
+    model: ["claude-haiku-4-5-20251001", "claude-3-5-haiku-20241022"]
+    temperature: 0.2
+    max_output_tokens: 800
+
+  gemini:
+    enabled: true
+    model: ["gemini-2.0-flash", "gemini-1.5-flash-latest"]
+    temperature: 0.2
+    max_output_tokens: 800
+
+ui:
+  mode: "tabbed" # tabbed | json
+  tab_labels:
+    openai: "OpenAI"
+    claude: "Claude"
+    gemini: "Gemini"
