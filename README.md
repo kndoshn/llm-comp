@@ -12,16 +12,20 @@ Compare LLM responses side-by-side in your terminal.
 Select models to compare responses
 ────────────────────────────────────
 
-❯ ▾ ◈ OpenAI  2/5
+❯ ▾ ◈ OpenAI  2/9
    ›  ☑  GPT-5.2 Pro   ★
       ☑  GPT-5.2       ★
+      ☐  GPT-5.1       ★
+      ☐  GPT-5         ★
+      ☐  GPT-5 Mini
       ☐  GPT-5 Nano    ⚡
 
-  ▾ ◈ Claude  1/3
-      ☑  Claude Opus 4.5  ★
+  ▾ ◈ Claude  1/6
+      ☑  Claude Opus 4.5    ★
       ☐  Claude Sonnet 4.5
+      ☐  Claude Opus 4.1
 
-  ▸ ◈ Gemini  0/4
+  ▸ ◈ Gemini  0/9
 
 ────────────────────────────────────
 ✔ 3 models selected
@@ -159,7 +163,7 @@ providers:
 
   gemini:
     enabled: true
-    model: ["gemini-2.0-flash"]
+    model: ["gemini-2.5-flash-lite"]
     temperature: 0.2
     max_output_tokens: 800
 
